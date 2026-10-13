@@ -1,0 +1,62 @@
+{
+  "ingredient_lots": [
+    {
+      "lot_id": "LOT-FLOUR-01",
+      "ingredient": "wheat flour",
+      "supplier": "Supplier A",
+      "received_date": "2026-10-01",
+      "quantity": 500
+    },
+    {
+      "lot_id": "LOT-OIL-02",
+      "ingredient": "vegetable oil",
+      "supplier": "Supplier B",
+      "received_date": "2026-10-02",
+      "quantity": 80
+    }
+  ],
+  "production_batches": [
+    {
+      "batch_id": "BATCH-BREAD-101",
+      "product": "bread loaf",
+      "production_date": "2026-10-05",
+      "input_lot_ids": [
+        "LOT-FLOUR-01",
+        "LOT-OIL-02"
+      ],
+      "quantity": 1200
+    },
+    {
+      "batch_id": "BATCH-BREAD-102",
+      "product": "bread loaf",
+      "production_date": "2026-10-06",
+      "input_lot_ids": [
+        "LOT-FLOUR-01"
+      ],
+      "quantity": 900
+    }
+  ],
+  "shipments": [
+    {
+      "shipment_id": "SHIP-001",
+      "batch_id": "BATCH-BREAD-101",
+      "destination": "Store North",
+      "ship_date": "2026-10-05",
+      "quantity": 600
+    },
+    {
+      "shipment_id": "SHIP-002",
+      "batch_id": "BATCH-BREAD-101",
+      "destination": "Store East",
+      "ship_date": "2026-10-06",
+      "quantity": 600
+    },
+    {
+      "shipment_id": "SHIP-003",
+      "batch_id": "BATCH-BREAD-102",
+      "destination": "Store West",
+      "ship_date": "2026-10-06",
+      "quantity": 900
+    }
+  ]
+}

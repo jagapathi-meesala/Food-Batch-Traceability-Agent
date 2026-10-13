@@ -1,0 +1,23 @@
+spec_version: "0.1.0"
+name: food-batch-traceability-agent
+version: "1.0.0"
+description: Validates food batch records, links ingredient and production lots, and prepares traceability and recall-support summaries.
+author: jagapathi-meesala
+license: MIT
+skills:
+  - batch-record-validation
+  - traceability-linking
+  - recall-reporting
+tools:
+  - validate-batch-record
+  - build-traceability-links
+  - prepare-recall-summary
+runtime:
+  max_turns: 5
+  temperature: 0.2
+  timeout: 30
+tags:
+  - food-safety
+  - traceability
+  - batch-management
+  - recall-support

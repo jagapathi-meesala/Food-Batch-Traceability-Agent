@@ -1,0 +1,11 @@
+name: build-traceability-links
+description: Link ingredient lots to production batches and batches to shipments using explicit IDs.
+input_schema:
+  type: object
+  properties:
+    dataset:
+      type: object
+      description: Validated food batch dataset.
+  required:
+    - dataset
+  additionalProperties: false

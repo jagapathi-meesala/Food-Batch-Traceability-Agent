@@ -1,0 +1,15 @@
+name: prepare-recall-summary
+description: Prepare a human-review mock recall summary for a selected production batch.
+input_schema:
+  type: object
+  properties:
+    dataset:
+      type: object
+      description: Supplied batch traceability dataset.
+    batch_id:
+      type: string
+      description: Exact production batch identifier to trace.
+  required:
+    - dataset
+    - batch_id
+  additionalProperties: false

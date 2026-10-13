@@ -1,0 +1,11 @@
+name: validate-batch-record
+description: Validate supplied ingredient lot, production batch, and shipment records.
+input_schema:
+  type: object
+  properties:
+    dataset:
+      type: object
+      description: Batch traceability dataset supplied by the user.
+  required:
+    - dataset
+  additionalProperties: false
